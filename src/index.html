@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Smart App Banner</title>
+    <script type="module" src="/build/sab.esm.js"></script>
+    <script nomodule src="/build/sab.js"></script>
+    <style>
+      .bg {
+        height: 180px;
+        background: #09c;
+        padding: 20px;
+      }
+      .bg h1 {
+        color: #fff;
+        padding-top: 20px;
+      }
+      .bg p {
+        color: #fff;
+        padding-top: 12px;
+      }
+      .card {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 23px;
+        background: #fff;
+        position: relative;
+        top: -40px;
+        height: 360px;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.23), 0 -1px 1px 0 rgba(0,0,0,.1);
+        padding: 20px;
+      }
+      .card h3 {
+        color: #333;
+      }
+      .card ul {
+        padding: 20px 0 20px 40px;
+      }
+      .card ul li {
+        margin: 12px 0;
+      }
+      code {
+        background-color: #eee;
+        padding: 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg">
+      <h1>Mi Espacio Pacífico</h1>
+      <p>Smart App Banner</p>
+    </header>
+    <article class="card">
+      <h3>Propiedades</h3>
+      <ul>
+        <li><code>app-store-url</code></li>
+        <li><code>play-store-url</code></li>
+        <li><code>app-store-rating</code></li>
+        <li><code>play-store-rating</code></li>
+        <li><code>favicon</code></li>
+        <li><code>name</code></li>
+        <li><code>author</code></li>
+      </ul>
+    </article>
+    <x-smart-app-banner
+      app-store-url="https://itunes.apple.com/pe/app/pacifico-movil/id1078367195?mt=8"
+      play-store-url="https://play.google.com/store/apps/details?id=pe.com.pacifico.miespacio&hl=es-419"
+      app-store-uri="mep://"
+      play-store-uri="mep://"
+      favicon="https://i.imgur.com/zN4SMQm.jpg"
+      name="Mi Espacio Pacífico"
+      author="Pacífico Seguros"
+      app-store-rating="2.8"
+      play-store-rating="3.4"
+    ></x-smart-app-banner>
+  </body>
+</html>
